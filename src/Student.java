@@ -5,9 +5,7 @@ public class Student {
     int age;
     double averageScore;
 
-
-
-    public Student(int number,String name,String lastName,int age,double averageScore){
+    public Student(int number, String name, String lastName, int age, double averageScore) {
         this.number = number;
         this.name = name;
         this.lastName = lastName;
@@ -15,7 +13,7 @@ public class Student {
         this.averageScore = averageScore;
     }
 
-    public void printInfo(){
+    public void printInfo() {
 
         System.out.println("----------------------");
         System.out.println("Информация о студенте:\nНомер зачетной книжки: " + number + "\nИмя: " + name +
@@ -23,8 +21,10 @@ public class Student {
                 "\nСредний балл: " + averageScore);
         System.out.println("----------------------");
     }
+
     @Override
-    public String toString(){
-        return "Имя "+ name+" "+lastName+" Возраст "+age+" Средний балл "+averageScore;
+    public String toString() {
+        return "Имя " + name + "" +
+                "\n " + lastName + " Возраст " + age + " Средний балл " + averageScore;
     }
 }
